@@ -8,7 +8,7 @@ void loop() {
   int cdsValue = analogRead(A1);
   Serial.print("cds =  ");
   Serial.println(cdsValue);
-  if (cdsValue > 50) {
+  if (cdsValue > 60) {
 	digitalWrite(7, HIGH);
 	Serial.println("MOTER ON (cds > 50)");
    }
